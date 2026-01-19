@@ -1,0 +1,107 @@
+.job-portal {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  min-height: 60vh;
+}
+
+.food-header {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.One{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.Two{
+  font-size: 25px;
+  color: #91f10a;
+}
+
+.company-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fcdetails{
+  color:#84d610 ;
+}
+
+.fcdetailsss{
+  color:#84d610 ;
+  margin-top: 50px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  /* text-align: left; */
+}
+
+th {
+  background-color: #91f10a;
+  color: black;
+  text-transform: uppercase;
+}
+
+.empty-message {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+/* .view-btn {
+  background-color: #250af1;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background-color: #bbf10a;
+  color: black;
+} */
+
+.buttonone, .buttontwo{
+  background-color: white;
+  color: rgb(19, 18, 18);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+ margin-right: 10px;
+}
+
+.buttonone:hover{
+  /* background-color: #bbf10a; */
+  color: #9e04ac;
+}
+
+.buttontwo:hover{
+  /* background-color: #bbf10a; */
+  color: #9e04ac;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}

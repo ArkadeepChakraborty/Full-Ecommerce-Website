@@ -1,0 +1,94 @@
+.add-product-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+    margin-right: 7px;
+  }
+  
+  .fname {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+  }
+  
+  .pname {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .image-preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .add {
+    width: 100%;
+    padding: 10px;
+    background-color: #91f10a;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .add:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Wrap input + suggestions in a relative container */
+.category-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Suggestions List Styling */
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  top: 100%;   /* place directly under input */
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Suggestion Items */
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.suggestions-list li:hover {
+  background: #f7f7f7;
+  color: #333;
+}

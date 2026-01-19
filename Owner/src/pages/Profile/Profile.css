@@ -1,0 +1,220 @@
+/* Global Container */
+.about-container {
+    width: 80%;
+    margin: 50px auto;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+  }
+  
+  /* Header Section */
+  
+  .headerof .title {
+    font-size: 28px;
+    color: #0073e6;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* Content Section */
+  .content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  
+  /* Profile Card */
+  .profile-card {
+    background: rgb(218, 218, 5);
+    color: black;
+    padding: 30px;
+    width: 330px;
+    text-align: center;
+    border-radius: 10px;
+    height: 44.5vh;
+  }
+
+  .profile-card:hover{
+    border-top: 4px solid black;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  .highlight-text {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .learn-more-btn {
+    background: #0044cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .learn-more-btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Services Grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-content: center;
+    top: -10px;
+  }
+  
+  .service-card {
+    background: rgb(252, 128, 128);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    word-wrap: break-word; /* Ensures long words wrap */
+    overflow-wrap: break-word;
+    width: 100%; /* Ensures all cards have the same width */
+    min-height: 150px; /* Set a minimum height to align all cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: black;
+  }
+  
+  .service-card h3 {
+    font-size: 16px;
+    color: black;
+    word-wrap: break-word; /* Wrap long text */
+    overflow-wrap: break-word;
+  }
+  
+  .service-card p {
+    margin: 5px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* Single column layout on smaller screens */
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  
+
+  .profile-photo-section {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .photo-upload-label {
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .service-card:hover {
+    border-top: 4px solid black;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+
+  .action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    margin-left: 118px;
+  }
+  
+  .edith, .deleteh {
+    padding: 10px 200px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .edith {
+    background: rgb(252, 128, 128);
+    color: black;
+  }
+  
+  .deleteh {
+    background: rgb(218, 218, 5);
+    color: black;
+  }
+
+  .edith:hover {
+    border-top: 4px solid black;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+
+  .deleteh:hover {
+    border-top: 4px solid black;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+  }
+    
+  /* .active{
+    background-color: none
+  }
+  .inactive{
+    background: none;
+    color: white;
+  }
+   */
+  

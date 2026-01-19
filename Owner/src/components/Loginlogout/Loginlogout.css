@@ -1,0 +1,139 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f7f7;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .login-box input,
+  .login-box select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .login-box button {
+    padding: 10px;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-box button:hover {
+    background-color: #e68a00;
+  }
+  
+  .toggle-mode {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .toggle-mode span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .login-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-box input,
+  .login-box select {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+  .login-box button {
+    margin-top: 10px;
+    padding: 10px;
+    background: tomato;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .toggle-mode {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .toggle-mode span {
+    color: orange;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .login-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-close-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  /* Add only if ForgetPassword doesn't inherit modal styles properly */
+.forget-password-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}

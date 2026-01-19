@@ -1,0 +1,120 @@
+.order-list-container {
+  padding: 20px;
+  max-width: 1350px;
+  margin: auto;
+  border-radius: 12px;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-table th,
+.order-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.order-table th {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.order-table td {
+  background-color: #fafafa;
+  font-size: 0.95rem;
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.assigned-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #155724;
+  background-color: #d4edda;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.not-assigned {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #999;
+}
+
+.status-cell {
+  font-weight: 600;
+  color: #333;
+  vertical-align: middle !important;
+  text-align: center;
+  height: 100%;
+  padding: 16px 12px;
+  font-size: 1rem;
+}
+
+.counter-cell {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #003366;
+  background-color: #e6f0ff;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.pagination-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.pagination-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: bold;
+  color: #444;
+}
+
+.no-orders-message {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  color: #444;
+}

@@ -1,0 +1,90 @@
+.delivery-boy-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.db-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.db-switch-button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px 15px;
+  background-color: #ddd;
+  color: #222;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.db-switch-button.active {
+  background-color: #872ee7;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* .db-switch-button:hover {
+  background-color: #afef1c;
+  color: black;
+  transform: scale(1.03);
+} */
+
+.db-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.db-label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.db-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.db-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+}
+
+.db-button {
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.db-button:hover {
+  background-color: #388E3C;
+}
+
+.db-button.db-remove {
+  background-color: #e53935;
+  margin-top: 12px;
+}
+
+.db-button.db-remove:hover {
+  background-color: #c62828;
+}

@@ -1,0 +1,60 @@
+.food-counter-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+    margin-top: 50px;
+  }
+  
+  .Fc {
+    text-align: center;
+    color: #333;
+  }
+  
+  .cf {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cam {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .cb {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .opening-hours {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cm {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cm:hover {
+    background: #218838;
+  }
+  
+  .logo-preview {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  

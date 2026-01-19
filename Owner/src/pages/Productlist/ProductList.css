@@ -1,0 +1,148 @@
+.flist-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.flist-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.flist-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.flist-add-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.flist-add-btn:hover {
+  background-color: #218838;
+}
+
+.flist-select {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.flist-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.flist-cardx {
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.flist-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.flist-title {
+  margin: 10px 0 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.flist-meta {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.flist-price {
+  font-weight: bold;
+  color: #000;
+}
+
+.flist-status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.available {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.unavailable {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.flist-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.flist-edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.flist-edit-btn:hover {
+  background-color: #0069d9;
+}
+
+.flist-delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.flist-delete-btn:hover {
+  background-color: #c82333;
+}
+
+.flist-available-btn {
+  background-color: #9676f8;
+  color: white;
+}
+
+.flist-available-btn:hover {
+  background-color: #022109;
+}
+
+.flist-unavailable-btn {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.flist-unavailable-btn:hover {
+  background-color: #e0a800;
+}
+
