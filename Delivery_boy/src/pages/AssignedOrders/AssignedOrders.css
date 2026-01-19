@@ -1,0 +1,84 @@
+.assigned-orders-container {
+  padding: 40px;
+  text-align: center;
+}
+
+
+.assigned-orders-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.assigned-orders-table th {
+  background-color: #a8ff00;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.assigned-orders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.view-btn {
+  background-color: #76e002;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.accept-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.decline-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.declined-text {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.assigned-orders-containers {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefefe;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -50px;
+  margin-bottom: -100px;
+}
+
+.assigned-orders-containers p {
+  font-size: 18px;
+  color: #333;
+  background-color: #ffe0e0;
+  padding: 16px 24px;
+  border: 1px solid #ff9999;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 153, 153, 0.2);
+  font-weight: 500;
+}

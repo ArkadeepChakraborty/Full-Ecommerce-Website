@@ -1,0 +1,162 @@
+.user-orders-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.food-header {
+  text-align: center;
+}
+
+.food-header .One {
+  font-size: 36px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.food-header .Oneoo {
+  font-size: 18px;
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+
+.company-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fcdetails {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Cart Table */
+.cart-table {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cart-header,
+.cart-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 12px;
+  text-align: center;
+}
+
+.cart-header {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-row {
+  border-bottom: 1px solid #eee;
+}
+
+/* Bottom Section */
+.cart-bottom-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-total {
+  flex: 1;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.cart-total h3 {
+  margin-bottom: 15px;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary-line.total {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.checkout-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  background-color: #ff7043;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* OTP Section like promo code */
+.otp-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.otp-section p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.otp-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.otp-input-wrapper input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.otp-input-wrapper button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delivery-status-msg {
+  margin-top: 12px;
+  font-weight: 500;
+  color: green;
+}
+
+
+.empty-cart-message {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.empty-message {
+  font-size: 22px;
+  color: #888;
+}
+
+.login-warning {
+  text-align: center;
+  color: red;
+  margin-top: 20px;
+  font-weight: bold;
+}
