@@ -1,0 +1,64 @@
+.edit-profile-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.edit-profile-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.edit-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile-container label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.edit-profile-container input[type="text"],
+.edit-profile-container input[type="email"],
+.edit-profile-container input[type="file"],
+.edit-profile-container textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-profile-container input:focus,
+.edit-profile-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-profile-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.edit-profile-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-container button:hover {
+  background-color: #0056b3;
+}
