@@ -8,110 +8,110 @@ The system is built as a multi-role, multi-dashboard architecture, closely simul
 👥 User Roles & Responsibilities
 🧑‍🍳 User
 
-Create an account and manage personal profile
+1. Create an account and manage personal profile
 
-Browse available food stalls and menus
+2. Browse available food stalls and menus
 
-Add food items to cart and place orders
+3. Add food items to cart and place orders
 
-Make online payments
+4. Make online payments
 
-Receive OTP for delivery verification
+5. Receive OTP for delivery verification
 
-Get invoice automatically via email after successful delivery
+6. Get invoice automatically via email after successful delivery
 
 🏪 Food Owner
 
-Register and manage food stalls
+1. Register and manage food stalls
 
-Add, update, or remove food items
+2. Add, update, or remove food items
 
-Control food availability, prices, and quantities
+3. Control food availability, prices, and quantities
 
-Accept or reject user orders
+4. Accept or reject user orders
 
-Monitor stall and order status in real time
+5. Monitor stall and order status in real time
 
 🚴 Delivery Boy
 
-Create profile and manage availability status
+1. Create profile and manage availability status
 
-Automatically receive delivery assignments
+2. Automatically receive delivery assignments
 
-Deliver food orders to users
+3. Deliver food orders to users
 
-Verify delivery using OTP
+4. Verify delivery using OTP
 
-Update delivery status after successful verification
+5. Update delivery status after successful verification
 
 🛠️ Admin Authority
 
-Monitor the entire business ecosystem
+1. Monitor the entire business ecosystem
 
-View all users, food owners, delivery boys, and stalls
+2. View all users, food owners, delivery boys, and stalls
 
-Track all orders and transactions
+3. Track all orders and transactions
 
-Monitor delivery availability and order status
+4. Monitor delivery availability and order status
 
-Access complete business analytics and records
+5. Access complete business analytics and records
 
 ⚙️ Project Workflow
 
-User registers and logs into the main website.
+1. User registers and logs into the main website.
 
-User selects food items, adds them to cart, and places an order after payment.
+2. User selects food items, adds them to cart, and places an order after payment.
 
-Food Owner receives the order request and accepts or declines it.
+3. Food Owner receives the order request and accepts or declines it.
 
-Upon acceptance, a Delivery Boy is automatically assigned using a Round Robin algorithm.
+4. Upon acceptance, a Delivery Boy is automatically assigned using a Round Robin algorithm.
 
-An OTP is sent to the user for delivery authentication.
+5. An OTP is sent to the user for delivery authentication.
 
-Delivery Boy delivers the order and submits the OTP.
+6. Delivery Boy delivers the order and submits the OTP.
 
-If OTP matches, order status is updated to Delivered.
+7. If OTP matches, order status is updated to Delivered.
 
-An invoice is automatically generated and emailed to the user.
+8. An invoice is automatically generated and emailed to the user.
 
-Admin can monitor every step of this workflow in real time.
+9. Admin can monitor every step of this workflow in real time.
 
 🧠 Delivery Assignment Logic
 
-Implemented Round Robin Algorithm for fair and automatic delivery boy assignment
+1. Implemented Round Robin Algorithm for fair and automatic delivery boy assignment
 
-Ensures equal workload distribution among available delivery boys
+2. Ensures equal workload distribution among available delivery boys
 
-Delivery boys can enable or disable their availability
+3. Delivery boys can enable or disable their availability
 
 🧑‍💻 Tech Stack Used
-🌐 Frontend
+1. Frontend
 
-React (Vite)
+1. React (Vite)
 
-Normal CSS (User, Food Owner, Delivery Boy dashboards)
+2. Normal CSS (User, Food Owner, Delivery Boy dashboards)
 
-Tailwind CSS (Admin dashboard)
+3. Tailwind CSS (Admin dashboard)
 
-🔧 Backend
+2. Backend
 
-Node.js
+1. Node.js
 
-Express.js
+2. Express.js
 
-MongoDB (Database)
+3. MongoDB (Database)
 
-REST APIs
+4. REST APIs
 
-🔐 Other Features
+3. Other Features
 
-Role-based authentication
+1. Role-based authentication
 
-OTP-based delivery verification
+2. OTP-based delivery verification
 
-Automated invoice generation via email
+3. Automated invoice generation via email
 
-Secure order and transaction handling
+4. Secure order and transaction handling
 
 🤝 Team Contribution
 
@@ -119,24 +119,24 @@ This was a group project with distributed responsibilities:
 
 My Contribution
 
-Frontend development for User, Food Owner, and Delivery Boy
+1. Frontend development for User, Food Owner, and Delivery Boy
 
-Backend development for User module
+2. Backend development for User module
 
 Teammate Contribution
 
-Admin frontend development
+1. Admin frontend development
 
-Backend development for Admin, Food Owner, and Delivery Boy modules
+2. Backend development for Admin, Food Owner, and Delivery Boy modules
 
 🎯 Key Highlights
 
-Real-world multi-role system design
+1. Real-world multi-role system design
 
-Scalable and modular architecture
+2. Scalable and modular architecture
 
-Automated delivery assignment
+3. Automated delivery assignment
 
-Secure OTP verification
+4. Secure OTP verification
 
-Centralized admin monitoring system
+5. Centralized admin monitoring system
