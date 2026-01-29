@@ -6,6 +6,7 @@ This project is a real-world full-stack web platform designed to connect all foo
 The system is built as a multi-role, multi-dashboard architecture, closely simulating how an actual mall food ecosystem works.
 
 👥 User Roles & Responsibilities
+
 🧑‍🍳 User
 
 1. Create an account and manage personal profile
@@ -85,7 +86,7 @@ The system is built as a multi-role, multi-dashboard architecture, closely simul
 3. Delivery boys can enable or disable their availability
 
 🧑‍💻 Tech Stack Used
-1. Frontend
+🌐 Frontend
 
 1. React (Vite)
 
@@ -93,7 +94,7 @@ The system is built as a multi-role, multi-dashboard architecture, closely simul
 
 3. Tailwind CSS (Admin dashboard)
 
-2. Backend
+🔧 Backend
 
 1. Node.js
 
@@ -103,7 +104,7 @@ The system is built as a multi-role, multi-dashboard architecture, closely simul
 
 4. REST APIs
 
-3. Other Features
+🔐 Other Features
 
 1. Role-based authentication
 
