@@ -1,0 +1,180 @@
+/* =========================
+   BASE STYLES (Desktop Default)
+   ========================= */
+
+.edit-profile-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Heading */
+.edit-profile-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form layout */
+.edit-profile-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.edit-profile-container label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Inputs & Textarea */
+.edit-profile-container input[type="text"],
+.edit-profile-container input[type="email"],
+.edit-profile-container input[type="file"],
+.edit-profile-container textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.edit-profile-container input:focus,
+.edit-profile-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Textarea */
+.edit-profile-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button */
+.edit-profile-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-container button:hover {
+  background-color: #0056b3;
+}
+
+/* =========================
+   LAPTOP L (1440px)
+   ========================= */
+@media (max-width: 1440px) {
+  .edit-profile-container {
+    max-width: 650px;
+  }
+}
+
+/* =========================
+   LAPTOP (1024px)
+   ========================= */
+@media (max-width: 1024px) {
+  .edit-profile-container {
+    max-width: 90%;
+    margin: 50px auto;
+  }
+}
+
+/* =========================
+   TABLET (768px)
+   ========================= */
+@media (max-width: 768px) {
+  .edit-profile-container {
+    max-width: 95%;
+    padding: 25px;
+    margin: 40px auto;
+  }
+
+  .edit-profile-container h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* =========================
+   MOBILE L (425px)
+   ========================= */
+@media (max-width: 425px) {
+  .edit-profile-container {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+
+  .edit-profile-container h2 {
+    font-size: 1.4rem;
+  }
+
+  .edit-profile-container input,
+  .edit-profile-container textarea {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  .edit-profile-container button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* =========================
+   MOBILE M (375px)
+   ========================= */
+@media (max-width: 375px) {
+  .edit-profile-container {
+    padding: 18px;
+  }
+
+  .edit-profile-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .edit-profile-container input,
+  .edit-profile-container textarea {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   MOBILE S (320px)
+   ========================= */
+@media (max-width: 320px) {
+  .edit-profile-container {
+    padding: 15px;
+    margin: 20px 10px;
+  }
+
+  .edit-profile-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .edit-profile-container label {
+    font-size: 0.9rem;
+  }
+
+  .edit-profile-container input,
+  .edit-profile-container textarea {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .edit-profile-container button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

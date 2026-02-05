@@ -1,0 +1,139 @@
+/* =========================
+   BASE STYLES (Tablet + Laptop + Desktop)
+   ========================= */
+
+.how-it-works-container {
+  background: linear-gradient(to bottom, #fffbea, #ffffff);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.how-it-works-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f97316;
+  margin-bottom: 20px;
+}
+
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.how-it-works-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-wrapper {
+  background-color: #f97316;
+  color: white;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.step-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* =========================
+   MOBILE L (425px)
+   ========================= */
+@media (max-width: 425px) {
+  .how-it-works-container {
+    padding: 30px 15px;
+  }
+
+  .how-it-works-title {
+    font-size: 22px;
+  }
+
+  .icon-wrapper {
+    width: 56px;
+    height: 56px;
+    font-size: 22px;
+  }
+
+  .step-title {
+    font-size: 16px;
+  }
+
+  .step-description {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   MOBILE M (375px)
+   ========================= */
+@media (max-width: 375px) {
+  .how-it-works-title {
+    font-size: 21px;
+  }
+
+  .icon-wrapper {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .step-title {
+    font-size: 15px;
+  }
+
+  .step-description {
+    font-size: 12.5px;
+  }
+}
+
+/* =========================
+   MOBILE S (320px)
+   ========================= */
+@media (max-width: 320px) {
+  .how-it-works-container {
+    padding: 25px 12px;
+  }
+
+  .how-it-works-title {
+    font-size: 20px;
+  }
+
+  .how-it-works-grid {
+    gap: 15px;
+  }
+
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .step-title {
+    font-size: 14px;
+  }
+
+  .step-description {
+    font-size: 12px;
+  }
+}

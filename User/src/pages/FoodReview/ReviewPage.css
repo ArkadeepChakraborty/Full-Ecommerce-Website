@@ -1,0 +1,200 @@
+/* =========================
+   BASE STYLES (Desktop Default)
+   ========================= */
+
+.review-page {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.Nameholder,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.star.active {
+  color: #f4a261;
+}
+
+.Sbutton {
+  padding: 10px 20px;
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.Sbutton:hover {
+  background-color: #e76f51;
+}
+
+.day {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* =========================
+   LAPTOP L (1440px)
+   ========================= */
+@media (max-width: 1440px) {
+  .review-page {
+    max-width: 520px;
+  }
+}
+
+/* =========================
+   LAPTOP (1024px)
+   ========================= */
+@media (max-width: 1024px) {
+  .review-page {
+    max-width: 90%;
+  }
+}
+
+/* =========================
+   TABLET (768px)
+   ========================= */
+@media (max-width: 768px) {
+  .review-page {
+    max-width: 95%;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .star {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================
+   MOBILE L (425px)
+   ========================= */
+@media (max-width: 425px) {
+  .review-page {
+    margin-top: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  .Nameholder,
+  textarea {
+    font-size: 0.95rem;
+    padding: 9px;
+  }
+
+  .star {
+    font-size: 1.3rem;
+  }
+
+  .Sbutton {
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE M (375px)
+   ========================= */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .star {
+    font-size: 1.2rem;
+  }
+
+  .day {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   MOBILE S (320px)
+   ========================= */
+@media (max-width: 320px) {
+  .review-page {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .Nameholder,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .star {
+    font-size: 1.1rem;
+  }
+
+  .day {
+    font-size: 0.85rem;
+  }
+}

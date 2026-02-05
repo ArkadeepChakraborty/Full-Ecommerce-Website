@@ -1,0 +1,170 @@
+/* =========================
+   Features Section (BASE)
+   ========================= */
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.features-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.feature-icon {
+  width: 90px;
+  height: auto;
+}
+
+.feature-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6f00;
+  white-space: nowrap;
+}
+
+.divider {
+  height: 70px;
+  width: 2px;
+  background: #ddd;
+}
+
+.feature-item:last-child .divider {
+  display: none;
+}
+
+/* =========================
+   Laptop L (1440px)
+   ========================= */
+@media (max-width: 1440px) {
+  .features-box {
+    max-width: 1100px;
+  }
+
+  .feature-text {
+    font-size: 26px;
+  }
+}
+
+/* =========================
+   Laptop (1024px)
+   ========================= */
+@media (max-width: 1024px) {
+  .features-box {
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .feature-icon {
+    width: 75px;
+  }
+
+  .feature-text {
+    font-size: 24px;
+  }
+}
+
+/* =========================
+   Tablet (768px)
+   ========================= */
+@media (max-width: 768px) {
+  .features-box {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .feature-icon {
+    width: 60px;
+  }
+
+  .feature-text {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .divider {
+    width: 70%;
+    height: 2px;
+  }
+}
+
+/* =========================
+   Mobile L (425px)
+   ========================= */
+@media (max-width: 425px) {
+  .features-container {
+    padding: 30px 12px;
+  }
+
+  .features-box {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    width: 55px;
+  }
+
+  .feature-text {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   Mobile M (375px)
+   ========================= */
+@media (max-width: 375px) {
+  .feature-icon {
+    width: 50px;
+  }
+
+  .feature-text {
+    font-size: 17px;
+  }
+}
+
+/* =========================
+   Mobile S (320px)
+   ========================= */
+@media (max-width: 320px) {
+  .features-container {
+    padding: 24px 10px;
+  }
+
+  .features-box {
+    padding: 16px;
+  }
+
+  .feature-icon {
+    width: 45px;
+  }
+
+  .feature-text {
+    font-size: 16px;
+  }
+}

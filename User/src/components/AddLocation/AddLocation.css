@@ -1,0 +1,108 @@
+/* =========================
+   BASE STYLES (Tablet + Laptop + Desktop)
+   ========================= */
+
+.add-location-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal Box */
+.add-location-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Inputs */
+.add-location-box input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.add-location-box button {
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-location-box .close-btn {
+  background: #dc3545;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* =========================
+   MOBILE L (425px)
+   ========================= */
+@media (max-width: 425px) {
+  .add-location-box {
+    width: 95%;
+    padding: 22px;
+  }
+
+  .add-location-box input,
+  .add-location-box button {
+    font-size: 15px;
+    padding: 11px;
+  }
+}
+
+/* =========================
+   MOBILE M (375px)
+   ========================= */
+@media (max-width: 375px) {
+  .add-location-box {
+    padding: 18px;
+  }
+
+  .add-location-box input,
+  .add-location-box button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* =========================
+   MOBILE S (320px)
+   ========================= */
+@media (max-width: 320px) {
+  .add-location-box {
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .add-location-box input,
+  .add-location-box button {
+    font-size: 13px;
+    padding: 9px;
+  }
+}

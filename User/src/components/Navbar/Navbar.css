@@ -1,0 +1,496 @@
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Default Navbar - "Food Faction" text styling */
+.navbar .food {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #49557e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.food:hover {
+    color: #ffd700;
+}
+
+/* Navbar Menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.navbar-menu a {
+    color: #49557e;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover, .navbar-menu .active {
+    border-bottom: 2px solid #49557e;
+}
+
+/* Right Section of Navbar */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #fff4f2;
+}
+
+/* Search Box */
+.navbar-search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.search-box {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.navbar-search-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-count-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: tomato;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 2px 6px;
+  /* font-weight: bold; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 18px;
+  height: 18px;
+  line-height: 1;
+}
+
+/* Profile Dropdown */
+.navbar-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    list-style: none;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-profile-dropdown li:hover {
+    color: tomato;
+}
+
+/* Simplified Navbar for Cart Page */
+.navbar.cart-navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-navbar .food {
+    text-align: right;
+    font-size: 1.8rem;
+    color: #49557e;
+    margin-left: 10px;
+}
+
+.cart-navbar .logout-button {
+    text-align: left;
+    margin-right: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-navbar .logout-button:hover {
+    background-color: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 1050px) {
+    .navbar-menu {
+        gap: 15px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        gap: 10px;
+        font-size: 16px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+
+
+.simplified-navbar {
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.simplified-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #49557e;
+}
+
+.simplified-navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.simplified-navbar .logout-button {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.simplified-navbar .logout-button:hover {
+    background-color: darkred;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-toggle img {
+    width: 20px;
+    height: 23px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown-toggle img:hover {
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 160px;
+    list-style: none;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #49557e;
+    display: block;
+    width: 100%;
+}
+
+.dropdown-menu li:hover {
+    background: #f8f8f8;
+}
+
+.dropdown-menu li button {
+    background: none;
+    border: none;
+    color: #49557e;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    font-size: 16px;
+}
+
+.dropdown-menu li button:hover {
+    color: tomato;
+}
+
+.navbar simplified-navbar .food simplified-titleo{
+    margin-left: auto;
+}
+
+/* Navbar Container */
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps logout button on the right */
+    padding: 15px 20px;
+    color: black;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left Section - Home Icon & Title */
+  .custom-navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds space between home icon and title */
+  }
+  
+  .custom-navbar-left a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s;
+  }
+  
+  .custom-navbar-left a:hover {
+    color: #f0c987;
+  }
+  
+  .custom-active {
+    color: #f0c987;
+  }
+  
+  /* Navbar Title */
+  .custom-navbar-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Right Section - Logout Button */
+  .custom-navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-logout-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .custom-logout-button:hover {
+    color: #f44336;
+  }
+
+  .suppp{
+    margin-top: -100px;
+  }
+  
+
+
+
+  /* Responsive Design */
+@media (max-width: 1050px) {
+    .navbar-menu {
+        gap: 15px;
+        font-size: 17px;
+    }
+    .navbar-right {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        gap: 10px;
+        font-size: 16px;
+    }
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Hide desktop menu on small screens */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+    }
+}
+
+/* Mobile Scroll Menu */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: flex;
+        gap: 12px;
+        padding: 10px 14px;
+        overflow-x: auto;
+        white-space: nowrap;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        scrollbar-width: none;
+    }
+
+    .mobile-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-menu a {
+        flex: 0 0 auto;
+        font-size: 15px;
+        padding: 6px 12px;
+        border-radius: 20px;
+        color: #49557e;
+        background: #f6f6f6;
+        text-decoration: none;
+    }
+
+    .mobile-menu a:hover {
+        background: tomato;
+        color: white;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 375px) {
+    .food {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+
+    .navbar{
+        margin-left: -4%;
+    }
+
+    .navbar-right {
+        gap: 12px;
+    }
+
+    .mobile-menu a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+
+/* Desktop / Tablet (default) */
+.signin-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 📱 Mobile fixes */
+@media (max-width: 480px) {
+  .signin-icon {
+    display: none; /* hide icon */
+  }
+
+  .signin-btn {
+    white-space: nowrap;     
+    padding: 8px 14px;      
+    font-size: 14px;         
+    min-width: 70px;         
+    justify-content: center;
+  }
+}

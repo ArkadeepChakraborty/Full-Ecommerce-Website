@@ -1,0 +1,228 @@
+/* =========================
+   Testimonial Section (BASE)
+   ========================= */
+
+.testimonial-containerxx {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeIn 0.6s ease-in-out;
+  margin-bottom: -100px;
+}
+
+.testimonial-title {
+  font-size: 2.5rem;
+  color: #0d1b2a;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.testimonial-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* =========================
+   Slider Wrapper
+   ========================= */
+
+.testimonial-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.testimonial-content {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.testimonial-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* =========================
+   Testimonial Card
+   ========================= */
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  min-width: 320px;
+  max-width: 320px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   Card Content
+   ========================= */
+
+.stars {
+  margin-bottom: 15px;
+}
+
+.star {
+  font-size: 24px;
+  color: #ddd;
+}
+
+.star.active {
+  color: #f59e0b;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.client-name {
+  font-size: 1.1rem;
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* =========================
+   Laptop L (1440px)
+   ========================= */
+
+@media (max-width: 1440px) {
+  .testimonial-title {
+    font-size: 2.3rem;
+  }
+
+  .testimonial-card {
+    min-width: 300px;
+    max-width: 300px;
+  }
+}
+
+/* =========================
+   Laptop (1024px)
+   ========================= */
+
+@media (max-width: 1024px) {
+  .testimonial-title {
+    font-size: 2.1rem;
+  }
+
+  .testimonial-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-card {
+    min-width: 280px;
+    max-width: 280px;
+  }
+}
+
+/* =========================
+   Tablet (768px)
+   ========================= */
+
+@media (max-width: 768px) {
+  .testimonial-title {
+    font-size: 1.9rem;
+  }
+
+  .testimonial-subtitle {
+    font-size: 1rem;
+  }
+
+  .testimonial-card {
+    min-width: 260px;
+    max-width: 260px;
+    padding: 24px 20px;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   Mobile L (425px)
+   ========================= */
+
+@media (max-width: 425px) {
+  .testimonial-containerxx {
+    padding: 40px 16px;
+    margin-bottom: -60px;
+  }
+
+  .testimonial-title {
+    font-size: 1.7rem;
+  }
+
+  .testimonial-card {
+    min-width: 240px;
+    max-width: 240px;
+    padding: 22px 18px;
+  }
+
+  .star {
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   Mobile M (375px)
+   ========================= */
+
+@media (max-width: 375px) {
+  .testimonial-title {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+  .client-name {
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   Mobile S (320px)
+   ========================= */
+
+@media (max-width: 320px) {
+  .testimonial-containerxx {
+    padding: 36px 12px;
+  }
+
+  .testimonial-title {
+    font-size: 1.45rem;
+  }
+
+  .testimonial-card {
+    min-width: 220px;
+    max-width: 220px;
+    padding: 20px 16px;
+  }
+
+  .testimonial-text {
+    font-size: 0.9rem;
+  }
+}

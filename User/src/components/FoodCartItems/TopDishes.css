@@ -1,0 +1,177 @@
+.container {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-rating {
+    color: #ffa500;
+  }
+  
+  .add-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+
+  .unavailable-buttonoo {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #888;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* ---------- Small mobiles (320px and below) ---------- */
+@media (max-width: 360px) {
+  .container {
+    padding: 24px 12px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .card-image {
+    height: 140px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 13px;
+  }
+
+  .card-price {
+    font-size: 16px;
+  }
+
+  .add-button,
+  .unavailable-buttonoo {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* ---------- Medium mobiles (375px – 480px) ---------- */
+@media (min-width: 361px) and (max-width: 480px) {
+  .container {
+    padding: 30px 16px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .card-image {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .add-button,
+  .unavailable-buttonoo {
+    font-size: 15px;
+    padding: 9px;
+  }
+}
+
+/* ---------- Tablets (481px – 768px) ---------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 36px 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .dishes-grid {
+    gap: 18px;
+  }
+
+  .card-image {
+    height: 155px;
+  }
+}

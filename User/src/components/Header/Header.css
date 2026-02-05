@@ -1,0 +1,169 @@
+/* =====================
+   HEADER BASE
+===================== */
+.header {
+  height: 34vw;
+  max-height: 520px;                
+  min-height: 280px;                 
+  margin: 30px auto;
+  background: url('/header_img.png') no-repeat center;
+  background-size: contain;
+  border-radius: 0.5rem;
+  position: relative;
+  margin-bottom: -5px;
+}
+
+/* =====================
+   HEADER CONTENT
+===================== */
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+
+/* =====================
+   HEADING
+===================== */
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: clamp(22px, 4.5vw, 56px);
+  line-height: 1.2;
+}
+
+/* =====================
+   TEXT
+===================== */
+.content {
+  color: white;
+  font-size: clamp(13px, 1vw, 16px);
+  line-height: 1.5;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.header-contents .butn {
+  border: none;
+  color: #3b15e3;
+  font-weight: 500;
+  padding: 12px 28px;
+  background-color: white;
+  font-size: clamp(13px, 1vw, 16px);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header-contents .butn:hover {
+  background-color: #3b15e3;
+  color: white;
+}
+
+/* =====================================================
+   RESPONSIVE BREAKPOINTS
+===================================================== */
+
+/* 🖥 Laptop L – 1440px */
+@media (min-width: 1440px) {
+  .header {
+    max-height: 600px;
+  }
+
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+/* 💻 Laptop – 1024px */
+@media (max-width: 1024px) {
+  .header {
+    height: 38vw;
+  }
+
+  .header-contents {
+    max-width: 55%;
+  }
+}
+
+/* 📲 Tablet – 768px */
+@media (max-width: 768px) {
+  .header {
+    height: 45vw;
+    background-size: cover;
+  }
+
+  .header-contents {
+    max-width: 70%;
+    left: 5vw;
+    bottom: 12%;
+  }
+
+  .content {
+    font-size: 14px;
+  }
+}
+
+/* 📱 Mobile L – 425px */
+@media (max-width: 425px) {
+  .header {
+    height: 65vw;
+    background-size: cover;
+  }
+
+  .header-contents {
+    max-width: 90%;
+    left: 5%;
+    bottom: 15%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    display: none;
+  }
+}
+
+/* 📱 Mobile M – 375px */
+@media (max-width: 375px) {
+  .header {
+    height: 70vw;
+  }
+
+  .header-contents h2 {
+    font-size: 24px;
+  }
+
+  .header-contents .butn {
+    padding: 10px 24px;
+  }
+}
+
+/* 📱 Mobile S – 320px */
+@media (max-width: 320px) {
+  .header {
+    height: 75vw;        
+    width: 115%;         
+    margin-left: -7%;    
+    margin-right: -1%;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: -8%;
+  }
+
+  .header-contents {
+    bottom: 12%;
+  }
+
+  .header-contents h2 {
+    font-size: 22px;
+  }
+}

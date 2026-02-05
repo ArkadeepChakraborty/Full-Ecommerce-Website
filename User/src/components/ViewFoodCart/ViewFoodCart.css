@@ -1,0 +1,228 @@
+.view-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: -40px;
+}
+
+.view-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #5e3c99;
+}
+
+.view-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.view-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.view-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.view-card-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.view-status-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  z-index: 2;
+  color: white;
+}
+
+.open-badge {
+  background-color: #28a745; /* Green */
+}
+
+.closed-badge {
+  background-color: #dc3545; /* Red */
+}
+
+.view-badges {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.view-discount {
+  background: #a155b9;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.view-fast {
+  background: #00bfa6;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.view-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.view-card-content {
+  padding: 15px 20px;
+}
+
+.view-name {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #222;
+  font-weight: 600;
+}
+
+.view-description {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 8px 0 12px;
+  line-height: 1.5;
+  height: 45px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-rating {
+  font-size: 1rem;
+  color: #ff9500;
+  margin-bottom: 6px;
+}
+
+.view-hours {
+  font-size: 0.9rem;
+  color: #6c5ce7;
+  font-weight: 500;
+}
+
+/* =========================
+   Small Mobile (320px)
+========================= */
+@media (max-width: 360px) {
+  .view-container {
+    padding: 25px 12px;
+  }
+
+  .view-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .view-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .view-image {
+    height: 170px;
+  }
+
+  .view-name {
+    font-size: 1.2rem;
+  }
+
+  .view-description {
+    font-size: 0.85rem;
+    height: 40px;
+  }
+
+  .view-rating {
+    font-size: 0.9rem;
+  }
+
+  .view-hours {
+    font-size: 0.85rem;
+  }
+
+  .view-status-badge {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .view-discount,
+  .view-fast {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+}
+
+/* =========================
+   Medium Mobile (375px)
+========================= */
+@media (min-width: 361px) and (max-width: 480px) {
+  .view-container {
+    padding: 30px 15px;
+  }
+
+  .view-title {
+    font-size: 2rem;
+  }
+
+  .view-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .view-image {
+    height: 180px;
+  }
+
+  .view-name {
+    font-size: 1.25rem;
+  }
+
+  .view-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* =========================
+   Tablets (Portrait & Landscape)
+========================= */
+@media (min-width: 481px) and (max-width: 768px) {
+  .view-container {
+    padding: 35px 18px;
+  }
+
+  .view-title {
+    font-size: 2.2rem;
+  }
+
+  .view-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  .view-image {
+    height: 190px;
+  }
+}
